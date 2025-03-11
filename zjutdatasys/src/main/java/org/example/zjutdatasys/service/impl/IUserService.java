@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 public class IUserService implements UserService {
     @Override
     public Result login(String id, String password) {
+
         return Result.ok();
     }
 }
