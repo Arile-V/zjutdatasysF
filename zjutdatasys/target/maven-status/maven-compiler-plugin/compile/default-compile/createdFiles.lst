@@ -1,0 +1,6 @@
+org\example\zjutdatasys\controller\UserController.class
+org\example\zjutdatasys\ZjutdatasysApplication.class
+org\example\zjutdatasys\pojo\Result.class
+org\example\zjutdatasys\service\UserService.class
+org\example\zjutdatasys\pojo\user.class
+org\example\zjutdatasys\service\impl\IUserService.class

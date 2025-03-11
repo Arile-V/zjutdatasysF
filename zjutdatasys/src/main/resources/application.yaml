@@ -1,0 +1,31 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: zjutdatasys
+  datasource:
+    url:  jdbc:mysql://127.0.0.1:3306/db01?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 951628437q
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: zjutdatasys
+    listener:
+      simple:
+        prefetch: 1
+  jackson:
+    default-property-inclusion: non_null
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      lettuce:
+        pool:
+          max-active: 10
+          max-idle: 10
+          min-idle: 1
+          time-between-eviction-runs: 10s
